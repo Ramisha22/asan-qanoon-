@@ -6,6 +6,7 @@ import { useState, useEffect, button } from "react";
 import axios from 'axios'
 import './App.css';
 import * as XLSX from 'xlsx';
+import SideNavbar from './sidebar';
 
 
 const ModelTrain = () => {
@@ -28,9 +29,8 @@ const ModelTrain = () => {
     return (
         <div>
 
-            <Navbar />
-            <div className="blur-background">
-                <div >
+            <SideNavbar/>
+                <div style={{display:'flex'}} >
                     <h1 className='tainmodel content'>
                         Train Model
                     </h1>
@@ -86,8 +86,6 @@ const ModelTrain = () => {
 
 
 
-
-        </div>
 
     )
 

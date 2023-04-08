@@ -2,7 +2,7 @@ import React from 'react'
 import { LineChart, Line, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { BarChart, Bar, Cell, XAxis, YAxis  } from 'recharts';
 import Navbar from "./navbar";
-import { BsPatchQuestion } from 'react-icons/bs';
+import { BsPatchQuestion,BsGraphUp ,BsPercent } from 'react-icons/bs';
 const Main = () => {
 
 
@@ -55,45 +55,14 @@ const data=[{
   "uv":10
 
 
-},{
-  "name":"Corruption",
-  "uv":40
-
-
-},{
-  "name":"Corruption",
-  "uv":10
-
-
-},{
-  "name":"Corruption",
-  "uv":40
-
-
-},{
-  "name":"Corruption",
-  "uv":10
-
-
-},{
-  "name":"Corruption",
-  "uv":40
-
-
-},{
-  "name":"Corruption",
-  "uv":10
-
-
-},
+}
 ]
 
   return (
 
    
 
-    <div> 
-      <Navbar />
+    <div style={{marginLeft:'180px',marginTop:'18px',paddingTop: '77px'}} > 
       <div style={{height: '50%'}}>
 
       <div className="card" style={{background: '#1D4537',width: '20%',height: '30%',marginTop:'10px',marginLeft:'8%'}}> 
@@ -104,27 +73,29 @@ const data=[{
       <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'35%'}}> 
       <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>Acurracy</h2>
       <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
-      <BsPatchQuestion className='tainmodel2'/>
+      <BsPercent className='tainmodel2'/>
       </div>
       <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'63%'}}> 
       <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>App ussage</h2>
       <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
-      <BsPatchQuestion className='tainmodel2'/>
+      <BsGraphUp className='tainmodel2'/>
       </div>
       </div>
-    <div className="blur-background" style={{flexDirection:'row', marginTop: '3%',justifyContent:'center', height:600, width: '100%'}} class="row">
-      <LineChart style={{color:'#1D4537'}} width={500} height={300} data={data}>
+    <div className="blur-background" style={{flexDirection:'row',marginLeft:'45px',marginTop: '3%',justifyContent:'center', height:600, width: '100%'}} class="row">
+    <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'-115px',display:'flex',width:'40%' ,height:'315px '}}>
+    <LineChart style={{color:'#1D4537'}} width={500} height={300} data={data}>
     <XAxis dataKey="name"/>
     <YAxis/>
     <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
     <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
   </LineChart>
-
-
+  </div>
+  <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'35px',display:'flex',width:'40%' ,height:'315px '}}>
+  
         <BarChart
-          width={900}
-          height={500}
+          width={450}
+          height={300}
           data={data}
           margin={{
             top: 5,
@@ -141,7 +112,7 @@ const data=[{
           {/* <Bar dataKey="pv" fill="#8884d8" /> */}
           <Bar  dataKey="uv" fill="#1D4537" />
         </BarChart>
-     
+     </div>
         </div>
         </div>
  

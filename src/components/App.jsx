@@ -24,7 +24,7 @@ function App() {
         <Route exact path="/displayfiles" element={<Displayfiles />}></Route>
         <Route exact path="/displaymessages" element={<Displaymessages />}></Route>
         <Route exact path="/Updatefileeditor" element={<Updatefileeditor />}></Route>
-        <Route exact path="/modeltrain" element={<ModelTrain />}></Route>
+        <Route exact path="/modeltraing" element={<ModelTrain />}></Route>
       </Routes>
     </BrowserRouter>
   );
