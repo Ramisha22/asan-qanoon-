@@ -1,0 +1,205 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color:#1B4235;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+.topnav {
+  background-color:white;
+  overflow: hidden;
+  height: 70px;
+}
+
+.topnav a {
+  position: fixed;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar-right {
+  height: 10%;
+  width: 20px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  top: 76px;
+  left: 0;
+  background-color:#1B4235;
+  overflow-x: hidden;
+  padding-top: 20px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  flex-direction: column;
+
+}
+
+.sidenav a {
+  align-items: center;  
+  font-weight: initial;
+  font-family: "pt-sans-regular", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  justify-content: flex-start;
+    white-space: nowrap;
+    height: 35px;
+    padding: 15px 0 15px 0;
+    color: rgba(255, 255, 255, 0.7);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  margin-left: 11px;
+  margin-right: 34px;
+  color: #f2f2f2;
+  margin-bottom: 35px;
+  display: flex;
+}
+
+.sidenav a:hover {
+  color: #fff;
+  background-color: #f3cd8f;
+  height: 35px;
+}
+
+.main {
+  display: flex;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+}
+
+
+.blur-background {
+  position: relative;
+}
+.card {
+  background-color: rgb(130, 202, 157);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  border-radius: 5px;
+}
+
+.blur-background::before {
+  background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-position: 'center';
+  content: "";
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  background-image: url('D:\Downloads\qanoonfehmiWeb-main\qanoonfehmiWeb-main\src\components\image 6.png');
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+}
+.blur-background1 {
+  position: relative;
+}
+
+.blur-background1::before {
+  background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-position: 'center';
+  content: "";
+  position: absolute;
+  top: 100;
+  left: 0;
+  width: 100%;
+  height: 85vh;
+  background-image: url('D:\Downloads\qanoonfehmiWeb-main\qanoonfehmiWeb-main\src\components\golden.jpg');
+  background-size: cover;
+  filter: blur(4px);
+  z-index: -1;
+}
+.content {
+  /* Your content styles */
+  position: relative;
+  z-index: 1;
+}
+.tainmodel{
+  text-align: center;
+  color:#1D4537;
+  font-weight: 700;
+  font-size: 30px;
+}
+.form-image {
+  flex: 1;
+  padding: 16px;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+}
+.form {
+  flex: 2;
+  padding: 16px;
+}
+.form-image img {
+  height:90vh;
+  width:814px;
+}
+.tainmodel2{
+  text-align: center;
+  color:white;
+  font-weight: 700;
+  font-size: 40px;
+  
+}
+.button {
+  background-color: #1B4235;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  padding: 8px 2px;
+  cursor: pointer;
+  margin-left: 85%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
