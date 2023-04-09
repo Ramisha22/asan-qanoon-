@@ -24,7 +24,7 @@ const SideNavbar = () => {
                             <a href="#" class="nav-link" data-bs-toggle="dropdown"><BiUser style={{ fontSize: '28px' ,color:'black' }} /></a>
                             <div class="dropdown-menu"style={{ position: 'absolute'}} >
                                 <Link class="dropdown-item"  to="/">Ramisha<span class="sr-only"></span></Link>
-                                <Link class="dropdown-item" to="/login"><ImExit style={{ margin: '3px' }} /> Logout <span class="sr-only"></span></Link>
+                                <Link class="dropdown-item" to="/"><ImExit style={{ margin: '3px' }} /> Logout <span class="sr-only"></span></Link>
                             </div>
                     </div>
 
@@ -50,11 +50,11 @@ const SideNavbar = () => {
     <div className="sidenav">
 
         <Link to="/home"> Home < BiHome style={{ marginLeft: '116px', fontSize: '20px' }} /></Link>
-        <a href="#">My Files  < BsFiles style={{ marginLeft: '100px', fontSize: '78px' }} />
-        </a>
+        <Link to ='/displayfiles'>My Files  < BsFiles style={{ marginLeft: '100px', fontSize: '78px' }} />
+        </Link>
         <Link to="/modeltraing">Model Training<BsFillMenuButtonWideFill style={{ marginLeft: '63px' }} /></Link>
-        <a href="#">FAQs <BsPatchQuestionFill style={{ marginLeft: '116px', fontSize: '78px' }} /></a>
-        <a href="#">User Management<FaUsers style={{ marginLeft: '36px', fontSize: '78px' }} /></a>
+        <Link to="/displaymessages">FAQs <BsPatchQuestionFill style={{ marginLeft: '116px', fontSize: '78px' }} /></Link>
+        <Link to="/users">User Management<FaUsers style={{ marginLeft: '36px', fontSize: '78px' }} /></Link>
     </div>
 
         </div >

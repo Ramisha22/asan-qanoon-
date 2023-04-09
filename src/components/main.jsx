@@ -82,7 +82,7 @@ const data=[{
       </div>
       </div>
     <div className="blur-background" style={{flexDirection:'row',marginLeft:'45px',marginTop: '3%',justifyContent:'center', height:600, width: '100%'}} class="row">
-    <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'-115px',display:'flex',width:'40%' ,height:'315px '}}>
+    <div style={{padding:'19px',paddingLeft:'-10px',boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'-115px',display:'flex',width:'40%' ,height:'315px '}}>
     <LineChart style={{color:'#1D4537'}} width={500} height={300} data={data}>
     <XAxis dataKey="name"/>
     <YAxis/>
@@ -91,7 +91,7 @@ const data=[{
     <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
   </LineChart>
   </div>
-  <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'35px',display:'flex',width:'40%' ,height:'315px '}}>
+  <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'35px',display:'flex',width:'40%' ,height:'315px ',padding:'23px'}}>
   
         <BarChart
           width={450}

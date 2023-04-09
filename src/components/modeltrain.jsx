@@ -29,60 +29,60 @@ const ModelTrain = () => {
     return (
         <div>
 
-            <SideNavbar/>
-                <div style={{display:'flex'}} >
-                    <h1 className='tainmodel content'>
-                        Train Model
-                    </h1>
-                    <div style={{
-                        background: "rgb(146, 146, 146, 0.3)",
-                        width: '1214px',
-                        height: '537px',
-                        marginLeft: '11%',
-                        top: '240px'
-                    }}>
-                        <div>
-                            <div className='button' >
-                                Upload text
-                            </div>
-                            <label class="form-label" for="customFile" className='tainmodel'>Select an excel file</label>
-                            <input type="file" class="form-control" id="customFile" style={{
-                                marginLeft: '11%',
-                                margintop: '240px', width: '50%', alignItems: 'center', marginTop: 10
-                            }} onChange={handleFileUpload} />
+            <SideNavbar />
+            <div className='min'>
+                <h1 className='tainmodel'>
+                    Train Model
+                </h1>
+                <div style={{
+                    background: "rgb(215 212 212 / 30%)",
+                    padding: '40px',
+                    marginLeft: '69px',
+                    marginRight: '66px'
+                    ,height:'580px'
+                }}>
+                    <div>
+                    
+                        <div className='button' >
+                        <Link to="/uploadText" style={{textDecoration: 'none' ,color:'white'}}>Upload via from</Link>
                         </div>
-                        <label class="form-label" for="customFile" className='tainmodel'>view excel file</label>
-                        <div style={{ height: '350px', overflow: 'scroll' }}>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>family laws</th>
-                                        <th>civil laws</th>
-                                        <th>criminal laws</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    {data.map((row, index) => (
-                                        <tr key={index}>
-                                            <td>{row[0]}</td>
-                                            <td>{row[1]}</td>
-                                            <td>{row[2]}</td>
-                                        </tr>
-                                    ))}
-                                </tbody>
-                            </table>
+                        <label class="form-label" for="customFile" className='tainmodel9'>Select an excel file</label>
+                        <input type="file" class="form-control" id="customFile" style={{
+                            marginLeft: '11%',color: '#198754',
+                            margintop: '240px', width: '50%', alignItems: 'center', marginTop: 10
+                        }} onChange={handleFileUpload} />
+                    </div>
+                    <label class="form-label" for="customFile" className='tainmodel9'>view excel file</label>
+                    <div className='tablehead'>
+                            Categories
+                    </div>
+                    <div style={{ marginTop:'20px',height: '340px',padding:'30px', overflow: 'scroll' }}>
+                    
+                        <table className="striped-table">
+                            <tbody>
 
-                        </div>
-                        <Link class="nav-link" to="/">
-                            <div className='button' >
-                                Upload
-                            </div>
-                        </Link>
+                                {data.slice(1).map((row, index) => (
+                                    <tr key={index}>
+                                        <td>{row[0]}</td>
+                                        <td>{row[1]}</td>
+                                        <td>{row[2]}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
                     </div>
 
+
+                    <Link class="nav-link" to="/">
+                        <div className='button' >
+                            Train
+                        </div>
+                    </Link>
                 </div>
 
             </div>
+
+        </div>
 
 
 

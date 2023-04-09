@@ -11,13 +11,15 @@ import Updatefileeditor from './updatefileeditor';
 import Home from './home';
 import ModelTrain from './modeltrain';
 import SideNavbar from './sidebar';
-
+import Users from './mangeuser';
+import Categoriesfiles from './displaycategories';
+import Form from './form';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         {/* <Route exact path="/" element={<Dashboard />}></Route> */}
-        <Route exact path="/" element={<Main />}></Route>
+        <Route exact path="/" element={< Login />}></Route>
         <Route exact path="/home" element={<Home />}></Route>
         <Route exact path="/texteditor" element={<Textedit />}></Route>
         <Route exact path="/signup" element={<Signup />}></Route>
@@ -25,6 +27,11 @@ function App() {
         <Route exact path="/displaymessages" element={<Displaymessages />}></Route>
         <Route exact path="/Updatefileeditor" element={<Updatefileeditor />}></Route>
         <Route exact path="/modeltraing" element={<ModelTrain />}></Route>
+        <Route exact path="/users" element={< Users/>}></Route>
+        <Route exact path="/uploadText" element={< Form/>}></Route>
+        <Route exact path="/categoriesfiles" element={<Categoriesfiles />}></Route>
+        <Route exact path="/displaymessages" element={<Displaymessages />}></Route>
+        {/* <Route exact path="/sucess" element={<Success/>}></Route> */}
       </Routes>
     </BrowserRouter>
   );

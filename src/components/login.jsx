@@ -21,11 +21,20 @@ const getuser = async () => {
         }
 
   return (
-    <div className="form-container">
     
-   <div class="container  form p-5 mt-5 mb-4" 
-   style={{backgroundColor: 'white',borderRadius: 20,width: '100%',borderwidth:2,height: '800%',  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)'}}>
-   <h1 class="text-center mb-lg-5">Login</h1>
+    <div className="background-image form-container "style={{flexDirection:'column'}}>
+   
+   
+   <div class="container " 
+   style={{backgroundColor: 'white',borderRadius: 20,width: '30%',borderwidth:2, height:"476px", boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginTop:'101px'}}>
+     <div className="form-image">
+        <img src={require("./images/ljcp.jpg")} alt="Form" />
+        
+</div> 
+{/* <div style={{ width: '56%', borderTop: '1px solid black' ,marginBottom:'3px'}} />
+<div style={{ width: '50%', borderTop: '1px solid black' }} /> */}
+
+   <h1 class="text-center mb-lg-5 text">Login</h1>
    <form action="#"  >
       
 
@@ -43,15 +52,13 @@ const getuser = async () => {
 
        </div>
 
-       <center><Link class="nav-link" to ="/stats">
-       <button type="button"  class="btn btn-dark mt-3" style={{width: "30%" ,borderRadius:20}} onSubmit={getuser()} > Login</button>
+       <center><Link class="nav-link" to ="/home">
+       <button type="button"  class="btn btn-dark mt-3" style={{width: "30%" ,borderRadius:20 ,background: '#1B4235'}} onSubmit={getuser()} > Login</button>
        </Link>
        </center>
    </form>
 </div>
-<div className="form-image">
-        <img src={require('./image 6.png')} alt="Form" />
-</div>
+
 
 </div>
 

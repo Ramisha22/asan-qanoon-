@@ -38,9 +38,7 @@
 }
 
 .topnav a {
-  position: fixed;
   float: left;
-  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -96,7 +94,7 @@
 
 .sidenav a:hover {
   color: #fff;
-  background-color: #f3cd8f;
+  background-color: #142f26;
   height: 35px;
 }
 
@@ -119,6 +117,12 @@
   padding: 16px;
   border-radius: 5px;
 }
+.min{
+  margin-top: 83px;
+  /* justify-content: flex-start; */
+  margin-left: 241px;
+  height: 100%;
+}
 
 
 
@@ -133,11 +137,35 @@
   font-weight: 700;
   font-size: 30px;
 }
+.text{
+ 
+  color:#1D4537;
+  font-weight: 500;
+  font-size: 40px;
+}
+.tainmodel9{
+  text-align: center;
+  color:#1D4537;
+  font-weight:500;
+  font-size: 18px;
+}
+.tainmodel91{
+  margin: 6px;
+  color:#1D4537;
+  font-weight:500;
+  font-size: 18px;
+}
 .form-image {
-  flex: 1;
-  padding: 16px;
+  display: flex;
+  justify-content: center;
+  width: 102%
+}
+.form-inputs {
+  display: block;
+  margin-bottom: 10px;
 }
 .form-container {
+  
   display: flex;
   align-items: center;
 }
@@ -146,8 +174,8 @@
   padding: 16px;
 }
 .form-image img {
-  height:90vh;
-  width:814px;
+  height:19vh;
+  width:114px;
 }
 .tainmodel2{
   text-align: center;
@@ -163,7 +191,15 @@
   text-align: center;
   padding: 8px 2px;
   cursor: pointer;
-  margin-left: 85%;
+  margin-left: 87%;
+  margin-top: 2%;
+}
+.button1{
+  background-color: #1B4235;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+  padding: 8px 2px;
 }
 
 .App-link {
@@ -179,3 +215,47 @@
   }
 }
 
+.striped-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.striped-table th,
+.striped-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #679385;
+}
+
+.striped-table tbody tr:nth-child(even) {
+  background-color: #ffffff;
+}
+.striped-table tbody tr:nth-child(1) {
+  background-color: #1B4235;
+  color: white;
+}
+.tablehead{
+  background-color: #1B4235;
+  color: white;
+  text-align: center;
+  margin-bottom: -20px;
+    margin-left: 31px;
+    margin-right: 47px;
+}
+
+.striped-table th {
+  background-color: #1B4235;
+  color: white;
+}
+.background-image {
+   background-image: url('bs.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+.con{
+  margin-left: 280px;
+  margin-top: 56px;
+  padding: 10px;
+}
