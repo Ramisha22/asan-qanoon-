@@ -14,12 +14,13 @@ import SideNavbar from './sidebar';
 import Users from './mangeuser';
 import Categoriesfiles from './displaycategories';
 import Form from './form';
+import Landing from './landing';
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* <Route exact path="/" element={<Dashboard />}></Route> */}
-        <Route exact path="/" element={< Login />}></Route>
+         <Route exact path="/" element={<Landing />}></Route>
+        <Route exact path="/login" element={< Login />}></Route>
         <Route exact path="/home" element={<Home />}></Route>
         <Route exact path="/texteditor" element={<Textedit />}></Route>
         <Route exact path="/signup" element={<Signup />}></Route>

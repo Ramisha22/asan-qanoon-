@@ -52,24 +52,24 @@ const Displaymessages = (props) => {
       <SideNavbar />
 
       <div>
-        <div style={{ flexDirection: 'row', marginTop: '5px', marginBottom: 5, width: '100%', height: 60, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', borderRadius: 0, border: 'none' }}>
+      <div style={{ flexDirection: 'row', marginTop: '5%', marginBottom: 5, width: '100%', height: 60, boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', borderRadius: 0, border: 'none' }}>
 
 
 
-          <form action="/search" >
+<form action="/search" >
 
-            <input type="text" style={{ marginTop: 5, border: 'none', padding: '10px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', borderRadius: '5px 0 0 5px', fontSize: '16px', width: '50%', marginLeft: '25%' }}
-              msg={search.length < 1 ? messages : searchResults}
-              value={search}
-              placeholder=" Filter Messages"
-              dir="rtl"
-              onChange={handleInputChange}
+  <input type="text" style={{ marginTop: 10, border: 'none', padding: '10px', boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)', borderRadius: '5px 0 0 5px', fontSize: '16px', width: '50%', marginLeft: '25%' }}
+    msg={search.length < 1 ? messages : searchResults}
+    value={search}
+    placeholder=" Filter Messages"
+    dir="rtl"
+    onChange={handleInputChange}
 
-            />  <button   style={{ backgroundColor: '#1B4235', color: 'white', border: 'none', borderRadius: '0 5px 5px 0', cursor: 'pointer', padding: '10px' }}><i className="fa fa-search" style={{ fontSize: '20px' }}></i></button></form>
+  />  <button   style={{ backgroundColor: '#1B4235', color: 'white', border: 'none', borderRadius: '0 5px 5px 0', cursor: 'pointer', padding: '10px' }}><i className="fa fa-search" style={{ fontSize: '20px' }}></i></button></form>
 
 
 
-        </div>
+</div>
 
 
 

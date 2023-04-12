@@ -70,13 +70,18 @@ const data=[{
       <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>1890</p>
       <BsPatchQuestion className='tainmodel2'/>
       </div>
-      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'35%'}}> 
+      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'29%'}}> 
       <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>Acurracy</h2>
       <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
       <BsPercent className='tainmodel2'/>
       </div>
-      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'63%'}}> 
+      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'51%'}}> 
       <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>App ussage</h2>
+      <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
+      <BsGraphUp className='tainmodel2'/>
+      </div>
+      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'74%'}}> 
+      <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}></h2>
       <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
       <BsGraphUp className='tainmodel2'/>
       </div>

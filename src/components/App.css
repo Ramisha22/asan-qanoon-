@@ -175,8 +175,7 @@
 }
 .form-image img {
   height:19vh;
-  width:114px;
-}
+  width: 279px;}
 .tainmodel2{
   text-align: center;
   color:white;
@@ -202,6 +201,11 @@
   padding: 8px 2px;
 }
 
+.landing-img{
+  margin-top: 75px;
+  width: 123%;
+  height: 638px;
+}
 .App-link {
   color: #61dafb;
 }
@@ -249,7 +253,7 @@
   color: white;
 }
 .background-image {
-   background-image: url('bs.jpg');
+   background-image: url('ba.jpeg');
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -258,4 +262,24 @@
   margin-left: 280px;
   margin-top: 56px;
   padding: 10px;
+}
+.land-jpg{
+  width: 1535px;
+    height: 638px;
+}
+.img-div{
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  direction: ltr;
+  color: #777;
+  font-family: "FrutigerNeueLTW02-CnBoo 775064","Arial Narrow",Arial,sans-serif;
+  font-size: 14px;
+  list-style: none;
+  line-height: 24px;
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1170px;
 }
