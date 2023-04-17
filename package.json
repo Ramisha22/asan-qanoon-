@@ -25,6 +25,7 @@
     "mongoose": "^7.0.1",
     "pdfjs-dist": "^3.4.120",
     "pdfkit": "^0.13.0",
+    "python-shell": "^5.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.7.2",
     "react-chartjs-2": "^5.2.0",

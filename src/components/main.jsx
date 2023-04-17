@@ -61,66 +61,60 @@ const data=[{
   return (
 
    
-
     <div style={{marginLeft:'180px',marginTop:'18px',paddingTop: '77px'}} > 
-      <div style={{height: '50%'}}>
+    <div style={{height: '50%',marginLeft:'43px'}}>
 
-      <div className="card" style={{background: '#1D4537',width: '20%',height: '30%',marginTop:'10px',marginLeft:'8%'}}> 
-      <h2  style={{background:'#1D4537'  ,color:'white',width: '100%',height: '30%'}}>Question Asked</h2>
-      <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>1890</p>
-      <BsPatchQuestion className='tainmodel2'/>
+    <div className="card" style={{background: '#1D4537',width: '22%',height: '30%',marginTop:'10px',marginLeft:'8%'}}> 
+    <h2  style={{background:'#1D4537'  ,color:'white',width: '100%',height: '30%'}}>Question Asked</h2>
+    <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>1890</p>
+    <BsPatchQuestion className='tainmodel2'/>
+    </div>
+    <div className="card" style={{background: '#1D4537',color:'white',width: '22%',height: '30%',marginTop:'-159px',marginLeft:'35%'}}> 
+    <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>Acurracy</h2>
+    <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
+    <BsPercent className='tainmodel2'/>
+    </div>
+    <div className="card" style={{background: '#1D4537',color:'white',width: '22%',height: '30%',marginTop:'-159px',marginLeft:'63%'}}> 
+    <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>App ussage</h2>
+    <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
+    <BsGraphUp className='tainmodel2'/>
+    </div>
+    </div>
+  <div className="blur-background" style={{flexDirection:'row',marginLeft:'45px',marginTop: '3%',justifyContent:'center', height:600, width: '100%'}} class="row">
+  <div style={{padding:'19px',paddingLeft:'-10px',boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'-115px',display:'flex',width:'40%' ,height:'315px '}}>
+  <LineChart style={{color:'#1D4537'}} width={500} height={300} data={data}>
+  <XAxis dataKey="name"/>
+  <YAxis/>
+  <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
+  <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+  <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
+</LineChart>
+</div>
+<div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'35px',display:'flex',width:'40%' ,height:'315px ',padding:'23px'}}>
+
+      <BarChart
+        width={450}
+        height={300}
+        data={data}
+        margin={{
+          top: 5,
+          right: 30,
+          left: 20,
+          bottom: 5,
+        }}
+      >
+        <CartesianGrid strokeDasharray="3 3" />
+        <XAxis dataKey="name" />
+        <YAxis />
+        <Tooltip />
+        <Legend />
+        {/* <Bar dataKey="pv" fill="#8884d8" /> */}
+        <Bar  dataKey="uv" fill="#1D4537" />
+      </BarChart>
+   </div>
       </div>
-      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'29%'}}> 
-      <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>Acurracy</h2>
-      <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
-      <BsPercent className='tainmodel2'/>
       </div>
-      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'51%'}}> 
-      <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}>App ussage</h2>
-      <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
-      <BsGraphUp className='tainmodel2'/>
-      </div>
-      <div className="card" style={{background: '#1D4537',color:'white',width: '20%',height: '30%',marginTop:'-159px',marginLeft:'74%'}}> 
-      <h2  style={{background: '#1D4537',width: '100%',color:'white',height: '30%'}}></h2>
-      <p  style={{width: '100%',backgroud: '#1D4537',color:'white',height: '30%'}}>78.8%</p>
-      <BsGraphUp className='tainmodel2'/>
-      </div>
-      </div>
-    <div className="blur-background" style={{flexDirection:'row',marginLeft:'45px',marginTop: '3%',justifyContent:'center', height:600, width: '100%'}} class="row">
-    <div style={{padding:'19px',paddingLeft:'-10px',boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'-115px',display:'flex',width:'40%' ,height:'315px '}}>
-    <LineChart style={{color:'#1D4537'}} width={500} height={300} data={data}>
-    <XAxis dataKey="name"/>
-    <YAxis/>
-    <CartesianGrid stroke="#eee" strokeDasharray="5 5"/>
-    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-    <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
-  </LineChart>
-  </div>
-  <div style={{boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.5)',marginLeft:'35px',display:'flex',width:'40%' ,height:'315px ',padding:'23px'}}>
-  
-        <BarChart
-          width={450}
-          height={300}
-          data={data}
-          margin={{
-            top: 5,
-            right: 30,
-            left: 20,
-            bottom: 5,
-          }}
-        >
-          <CartesianGrid strokeDasharray="3 3" />
-          <XAxis dataKey="name" />
-          <YAxis />
-          <Tooltip />
-          <Legend />
-          {/* <Bar dataKey="pv" fill="#8884d8" /> */}
-          <Bar  dataKey="uv" fill="#1D4537" />
-        </BarChart>
-     </div>
-        </div>
-        </div>
- 
+
   )
 }
 
